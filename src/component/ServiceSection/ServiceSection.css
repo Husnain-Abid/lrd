@@ -1,0 +1,220 @@
+/* section 5 start  */
+.service-section {
+  width: 100%;
+  margin: 10vh 0;
+  position: relative; /* Add this line */
+  z-index: 0; /* Ensure the section itself is above elements with lower z-index */
+}
+.service-section .services {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+
+.line-pattern-container {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  z-index: -1; /* This places the pattern behind */
+  transform: scaleX(-1);
+}
+
+.line-pattern-image {
+  width: 100%;
+  /* Adjust the height if needed */
+}
+.service-section .services h6 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color);
+
+}
+
+.service-section .services h2 {
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 57.6px;
+  text-align: center;
+  color: black;
+  padding: 0 2vw;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+}
+
+.service-section .services h2 span {
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  color: var(--color);
+}
+
+.service-section .services p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: center;
+
+}
+
+.service-section .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5vh 0;
+  gap: 2vw;
+}
+
+.service-section .card {
+  max-width: 405px;
+  background-color: var(--third-bg-color);
+  border-radius: var(--borderradius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  text-align: center;
+}
+
+.service-section .card h4 {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  text-align: center;
+  color: var(--color);
+  margin: 24px 0;
+
+}
+
+.service-section .card p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.service-section .card p {
+  font-family: var(--Roboto);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.5px;
+  text-align: center;
+}
+
+.service-section .btn {
+
+  text-align: center;
+}
+
+.service-section .btn .white-btn {
+  border: none;
+}
+
+.service-section .btn i {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* section 5 end  */
+
+
+
+.line-pattern-container-2 {
+  position: absolute;
+  bottom: -266px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  z-index: -1; /* This places the pattern behind */
+}
+
+.line-pattern-image-2 {
+  width: 100%;
+  /* Adjust the height if needed */
+}
+
+
+
+/* responsive design start  */
+
+@media only screen and (max-width: 800px) {
+
+  /* section 1 start  */
+  .service-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vh;
+    margin: 5vh 0;
+  }
+
+  .service-section .box-1 {
+    width: 100%;
+  }
+
+  .service-section .services h2 {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 43.2px;
+    text-align: center;
+  }
+
+  .service-section .services h2 span {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: center;
+  }
+
+  .service-section .services p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .service-section .card h4 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+  }
+
+  .service-section .card p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+
+  }
+
+  /* section 1 end  */
+
+  .line-pattern-container , .line-pattern-container-2{
+    display: none;
+  }
+
+
+}

@@ -1,0 +1,102 @@
+.office-service {
+  position: relative;
+  z-index: 10;
+margin-top: 200px;
+margin-bottom: 2vh;
+}
+
+.office-service .heading {
+  position: relative;
+  z-index: 10;
+  margin: 5vh 0;
+}
+
+.office-service .heading h1 {
+  text-align: center;
+  margin: 2vh 0;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 57.6px;
+  text-align: center;
+}
+
+.office-service .heading h1 span {
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  color: var(--color);
+}
+
+
+.desktop-image {
+  display: block;
+  width: 100%;
+  max-width: 1128px;
+  /* Adjust this max width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+.mobile-image {
+  display: none;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .office-service {
+    position: relative;
+    z-index: 10;
+margin: 0
+  }
+  
+
+
+
+
+  .office-service .heading {
+    display: none;
+  }
+
+
+  .arc-contioner img {
+    width: 100%;
+    max-width: 1128px;
+    /* Adjust this max width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .arc-contioner img {
+    width: 100%;
+    max-width: 1128px;
+    /* Adjust this max width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    max-width: 1128px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}

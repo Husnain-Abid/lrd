@@ -1,0 +1,205 @@
+/* section 5 start  */
+.section-3 {
+  width: 100%;
+  margin: 10vh 0;
+  padding: 0 5vw;
+  display: flex;
+  gap: 5vw;
+  position: relative;
+  z-index: 0;
+}
+
+.section-3 .box-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.section-3 .box-1 p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+
+}
+
+.section-3 .box-1 .cards {
+  display: flex;
+  margin: 24px 0;
+}
+
+.section-3 .box-1 .card h6 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: var(--color);
+  margin: 16px 0;
+}
+
+.section-3 .box-1 .card p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+.section-3 .btn .white-btn {
+  border: none;
+  margin: 24px 0;
+}
+
+.section-3 .btn i {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.section-3 .box-2 {
+  width: 100%;
+  /* Make the container responsive */
+
+}
+
+.section-3 .box-2 h1 {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: left;
+}
+
+.section-3 .box-2 h1 span {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: var(--color);
+}
+
+
+
+
+
+
+/* section 5 end  */
+
+
+.line-pattern-container-3 {
+  position: absolute;
+  bottom: -150px;
+  left: -60px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.line-pattern-image-3 {
+  width: 100%;
+  transform: rotate(10deg); /* Rotate 45 degrees */
+}
+
+.section3-line-img{
+  display: none;
+  width: 100%;
+}
+
+.section3-line-img img{
+  width: 100%;
+
+}
+
+/* responsive design start  */
+
+@media only screen and (max-width: 1200px) {
+
+  /* section 1 start  */
+
+  .section-3 .box-1 {
+    margin: 0;
+  }
+
+  .section-3 .box-1 h1 {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+
+  }
+
+  .section-3 .box-1 p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+
+  }
+
+  /* section 1 end  */
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .section-3 {
+    flex-direction: column;
+    align-items: center;
+  margin: 5vh 0;
+  }
+
+  .section-3 .box-1 {
+    text-align: left;
+  }
+  .line-pattern-container-3 {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .section-3 .box-1 {
+    text-align: left;
+  }
+
+  .section-3 .box-2 h1 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38.4px;
+    text-align: left;
+  }
+
+  .section-3 .box-2 h1 span {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+  }
+
+  .section-3 .box-2 p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+
+  }
+
+  .section-3 .box-1 .cards {
+    flex-direction: column;
+  }
+  .section3-line-img{
+display: block;
+}
+}

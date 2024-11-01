@@ -1,0 +1,243 @@
+/* footer  start  */
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 5vh 5vw;
+  background: linear-gradient(180deg, #52AB99 0%, #2C6777 100%);
+  position: relative;
+  z-index: 0;
+}
+
+.footer .footer-subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-subscribe .box-1 h2 {
+  color: white;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+}
+
+.footer .footer-subscribe .box-1 p {
+  color: white;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+
+}
+
+.footer .footer-subscribe .box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer .footer-subscribe .box-2 form input {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 24px;
+  margin-right: 10px;
+  border-radius: 2px;
+
+}
+
+.footer .footer-subscribe .box-2 form input::placeholder {
+  color: white;
+  /* Set the color you want for the placeholder text */
+  opacity: .5;
+}
+
+
+.footer .footer-subscribe .box-2 form button {
+  padding: 8px 34px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.footer .footer-subscribe .box-2 p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: right;
+  margin: 10px 0;
+  color: white;
+}
+
+
+.footer .foot-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 0;
+}
+
+.footer .foot-nav .links {
+  color: aliceblue;
+}
+
+.footer .foot-nav .links h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.footer .foot-nav .links ul {
+  list-style: none;
+}
+
+.footer .foot-nav .links ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+
+  margin-bottom: 8px;
+
+}
+
+
+
+/*  terms section */
+.footer .terms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+
+.footer .terms .privacy {
+  color: white;
+  display: flex;
+
+}
+
+.footer .terms .privacy ul {
+  list-style: none;
+  display: flex;
+  gap: 1vw;
+}
+
+.footer .terms .privacy ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+}
+
+.footer .terms .privacy p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-right: 10px;
+}
+
+.footer .terms .icons {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+
+
+.footer hr {
+  border-color: white;
+}
+
+
+
+
+
+/* footer end  */
+
+
+/* responsive design start  */
+@media only screen and (max-width: 1024px) {
+  .footer .footer-subscribe {
+    flex-direction: column;
+  }
+  .footer .footer-subscribe .box-1 h2 {
+  font-size: 28px;
+  }
+  .footer .footer-subscribe .box-1 p {
+  font-size: 14px;
+  }
+
+  .footer .footer-subscribe .box-2 {
+    align-items: start;
+    margin: 1vh 0;
+  }
+
+  .footer .foot-nav {
+    flex-direction: column;
+  }
+
+  .footer .foot-nav .links {
+    margin-bottom: 33px;
+  }
+
+  .footer .terms {
+    flex-direction: column-reverse;
+    gap: 2vh;
+  }
+
+  .footer .terms .privacy ul {
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .footer .terms .privacy {
+    flex-direction: column-reverse;
+    gap: 1vh;
+  }
+
+  .footer .terms .privacy ul li {
+    text-decoration: underline;
+  }
+
+  .footer .terms .privacy p {
+    margin-top: 10px;
+  }
+
+
+  .footer .terms .icons {
+    gap: 3vw;
+  }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .footer .footer-subscribe .box-2 form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+  }
+
+  .footer .footer-subscribe .box-2 form input {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+
+  .footer .footer-subscribe .box-2 form input::placeholder {
+    opacity: 1;
+  }
+}

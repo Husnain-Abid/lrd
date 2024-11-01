@@ -1,0 +1,130 @@
+/* section 5 start  */
+.section-6 {
+  width: 100%;
+  margin: 5vh 0;
+  padding: 0 5vw;
+  display: flex;
+  gap: 5vw;
+  position: relative;
+  z-index: 10;
+}
+
+.section-6 .box-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh 0;
+  flex-direction: column;
+}
+
+.section-6 .box-1 h1 {
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 57.6px;
+  margin: 24px 0;
+}
+
+.section-6 .box-1 h1 span {
+  font-weight: 700;
+  color: var(--color);
+}
+
+.section-6 .box-1 p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+
+}
+
+.section-6 .btn .white-btn {
+  margin: 24px 0;
+  margin-left: 10px;
+}
+
+.section-6 .btn i {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.section-6 .box-2 {
+  width: 100%;
+  /* Make the container responsive */
+  max-width: 616px;
+  /* Optional: limit max width if needed */
+}
+
+.box-2 img {
+  width: 100%;
+  /* Make the image responsive to its container */
+  /* height: auto; Maintain aspect ratio */
+  object-fit: contain;
+}
+
+
+
+
+/* section 5 end  */
+
+
+
+
+/* responsive design start  */
+
+@media only screen and (max-width: 1200px) {
+
+  /* section 1 start  */
+
+  .section-6 .box-1 {
+    margin: 0;
+  }
+
+  .section-6 .box-1 h1 {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 43.2px;
+
+  }
+  .section-6 .box-1 h1 span{
+    font-size: 36px;
+    font-weight: 600;
+
+  }
+  .section-6 .box-1 p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+
+  }
+
+  /* section 1 end  */
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .section-6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-6 .box-1 {
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+
+
+  .section-6 .box-1 {
+    text-align: left;
+  }
+
+}
